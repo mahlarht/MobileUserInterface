@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#E3F2FD"
+
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="right"
+        android:hint="پست الکترونیک"
+        android:inputType="textEmailAddress"
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:maxLines="1"
+        android:password="false"
+        android:singleLine="true"
+        android:layout_width="fill_parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="کلمه عبور"
+        android:imeActionId="@+id/login"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/email"
+        />
+
+    <ProgressBar
+
+        android:id="@+id/sign_in_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+    <Button
+
+        android:id="@+id/sign_in_button"
+        android:background="#1E88E5"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود"
+        android:textAlignment="gravity"
+        android:textSize="40dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+
+    <Button
+        android:id="@+id/sign_up_pre_button"
+        android:linksClickable="true"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_marginTop="40dp"
+        android:text="ثبت نام در فروشگاه"
+        android:layout_gravity="center"
+        android:background="#1E88E5"
+        android:onClick=""
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal" />
+</LinearLayout>

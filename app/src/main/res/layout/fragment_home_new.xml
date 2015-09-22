@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/changePassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:background="#E3F2FD"
+    android:orientation="horizontal"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="مشخصات آگهی"
+                android:textSize="32dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:autoText="false"
+                android:focusable="false"
+
+                android:layout_alignLeft="@+id/buttonok"
+                android:layout_alignStart="@+id/buttonok"
+                android:layout_alignRight="@+id/buttonok"
+                android:layout_alignEnd="@+id/buttonok" />
+
+            <TextView
+                android:id="@+id/subject1"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/label1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="عنوان"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:autoText="false"
+                android:focusable="false" />
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/subject1"
+                android:layout_marginRight="140dp"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:maxLength="10"
+
+                android:ems="10"
+                android:layout_alignTop="@+id/subject1" />
+
+            <TextView
+                android:id="@+id/group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/subject"
+                android:layout_marginTop="20dp"
+                android:text=" نوع "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:maxLength="10"
+                android:inputType="text"
+                android:layout_above="@+id/price1"
+                android:layout_alignLeft="@+id/progress"
+                android:layout_alignStart="@+id/progress"
+                android:layout_alignRight="@+id/subject"
+                android:layout_alignEnd="@+id/subject" />
+
+
+
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/group1"
+                android:layout_marginTop="20dp"
+                android:text="قیمت"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:maxLength="10"
+                android:ems="10"
+                android:layout_alignBottom="@+id/price1"
+                android:layout_toRightOf="@+id/progress"
+                android:layout_toEndOf="@+id/progress"
+                android:layout_alignRight="@+id/group"
+                android:layout_alignEnd="@+id/group" />
+
+            <TextView
+                android:id="@+id/ostan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/price1"
+                android:layout_marginTop="20dp"
+                android:text="نام استان"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/ostan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:maxLength="10"
+                android:inputType="text"
+                android:layout_alignBottom="@+id/ostan1"
+                android:layout_alignRight="@+id/price"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignTop="@+id/ostan1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/city1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ostan1"
+                android:layout_marginTop="20dp"
+                android:text="نام شهر"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:maxLength="10"
+                android:inputType="text"
+                android:layout_above="@+id/number1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/number"
+                android:layout_alignEnd="@+id/number" />
+
+
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/city1"
+                android:layout_marginTop="20dp"
+                android:text="شماره تلفن"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="10"
+                android:maxLength="10"
+                android:layout_alignTop="@+id/number1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/ostan"
+                android:layout_alignEnd="@+id/ostan" />
+
+
+            <TextView
+                android:id="@+id/explain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/number1"
+                android:layout_marginTop="20dp"
+                android:text="شرح آگهی"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:ems="50"
+                android:maxLength="10"
+                android:lines="5"
+                android:minLines="3"
+                android:inputType="text"
+                android:layout_toEndOf="@+id/progress"
+                android:layout_above="@+id/buttonok"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/number"
+                android:layout_alignEnd="@+id/number" />
+
+
+            <Button
+                android:id="@+id/buttonok"
+                style="?android:textAppearanceSmall"
+                android:layout_below="@+id/explain1"
+                android:layout_centerHorizontal="true"
+                android:background="#1E88E5"
+                android:onClick=""
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ثبت آگهی "
+                android:textAlignment="gravity"
+                android:textSize="30dp"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold" />
+
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+

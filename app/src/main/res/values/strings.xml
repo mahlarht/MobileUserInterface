@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UI</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_login">Login</string>
+    <string name="action_newsFeed"> تازه ها</string>
+    <string name="action_fastscroll">Fast scroll</string>
+    <string name="action_addpadding">Add padding</string>
+
+    <string name="action_new">درج آگهی</string>
+
+    <string name="action_showShadow">Show shadow</string>
+    <string name="action_showHeaderAndFooter">Show Header &amp; Footer</string>
+    <string name="action_updateDataset">Update dataset</string>
+
+
+    <string name="Laptop_section">لپ تاپ</string>
+    <string name="Setting_section">تنظیمات</string>
+    <string name="Mobile_section">  موبایل</string>
+    <string name="Book_section">  کتاب</string>
+    <string name="Clothing_section">  پوشاک</string>
+    <string name="feedback_section">انتقادات و پیشنهادات</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">جستجو</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="action_home">انواع کالا</string>
+
+    <string name="title_activity_about_us">درباره ی ما</string>
+    <string name="exit">خروج </string>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+
+    tools:context=".MainActivity" >
+
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:background="#cfcfcf"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Gallery
+            android:id="@+id/gallery1"
+            android:layout_below="@+id/image1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_alignRight="@+id/button3" />
+
+
+
+    <ExpandableListView
+        android:id="@+id/ListView"
+        android:layout_below="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/button3">
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:textAppearanceSmall"
+        android:background="#1E88E5"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="خرید"
+        android:textAlignment="gravity"
+        android:textSize="30dp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
